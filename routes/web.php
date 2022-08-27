@@ -13,10 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('/',WelcomeController::class);
 
-Auth::routes();
+Route::get('ciudades-departamento/{departamento_id}','CiudadController@ciudades_departamento');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('usuarios', UsuarioController::class);
+
+Route::get('seleccionar-ganador','GanadorSorteoController@seleccionar_ganador');
+Route::resource('ganador-sorteos', GanadorSorteoController::class);
+
+
+//Auth::routes();
+

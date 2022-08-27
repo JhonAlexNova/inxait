@@ -1,0 +1,85 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    
+    {
+        "name": "ciudad_id",
+        "dbType": "integer:unsigned:default,0:foreign,ciudades,id",
+        "htmlType": "text",
+        "relation": "mt1,Ciudad,ciudad_id,id"
+    },
+    {
+        "name": "nombre",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "apellido",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "cedula",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "celular",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "correo",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "habeas_data",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

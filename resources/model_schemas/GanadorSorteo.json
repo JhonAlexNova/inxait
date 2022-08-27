@@ -1,0 +1,54 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "usuario_id",
+        "dbType": "integer:unsigned:default,0:foreign,usuarios,id",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Usuario,usuario_id,id"
+    }
+]
